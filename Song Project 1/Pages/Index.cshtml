@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!-- Welcome Sign-->
+<div class="text-center">
+    <h1 class="display-4">Song Assignment!</h1><br />
+    <h1 class="animation">Welcome!</h1>
+    <p>Here is some of my favourite songs as of right now!</p>
+
+
+    <!-- List of Songs-->
+    <ul class="song_list">
+        <li>'ALWAYS' by Rex Orange County</li>
+        <li>'Legend' by Drake</li>
+        <li>'Die For You' by The Weeknd</li>
+    </ul>
+
+</div>
+<!-- Music Video Cotainer-->
+<div class="text-center"><button onclick="myAnimation()">Click Me</button></div>
+<div id="video_container">
+    <iframe id="video_animation" width="560" height="315" src="https://www.youtube.com/embed/uPD0QOGTmMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
